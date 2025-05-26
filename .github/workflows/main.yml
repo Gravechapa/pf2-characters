@@ -1,0 +1,16 @@
+name: Releases
+on: 
+  push:
+    tags:
+    - '*'
+jobs:    
+    build:
+        runs-on: ubuntu-latest
+        permissions:
+          contents: write
+        steps:
+        - uses: actions/checkout@v4
+        - run: git archive --format=zip --output module.zip HEAD
+        - uses: ncipollo/release-action@v1
+          with:
+            artifacts: "module.json,module.zip"
