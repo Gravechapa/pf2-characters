@@ -1,0 +1,23 @@
+{
+  "id": "gravechapas-characters",
+  "title": "Gravechapa's characters",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "packs": [
+    {
+      "name": "gravechapas-characters",
+      "label": "Gravechapa's characters",
+      "path": "packs/gravechapas-characters",
+      "type": "Actor",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "url": "https://github.com/Gravechapa/pf2-characters"
+}
